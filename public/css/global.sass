@@ -1,0 +1,104 @@
+@import ./default
+
+@media screen and ( max-width: 991px )
+  nav.navbar
+    background-color: #007bffc7
+
+    button.navbar-toggler
+      border: 2px rgba(223, 240, 255, 0.7) solid
+      padding: 0
+
+      i
+        color: rgba(223, 240, 255, 0.7)
+        font-size: 24px
+        padding: 7px 16px
+
+    .navbar-collapse
+      text-align: center
+
+      ul.navbar-nav
+        li.nav-item
+          margin-right: 0 !important
+          border-bottom: 1px #dff0ff solid
+          &:last-child
+            border-bottom: none
+          a.nav-link
+            color: white
+          a.under-line 
+            &:before
+              content: none
+            &:after
+              content: none
+
+      .btn-group
+        width: 100%
+        margin-top: 2vh
+
+        a
+          border: 2px solid #dff0ff !important
+          background-color: #dff0ff
+          &:first-child
+            color: #dff0ff
+            background-color: inherit
+
+  .hero
+    margin-top: 18vh
+    position: relative
+    top: 0
+
+    hgroup
+      width: 100vw
+
+      h1
+        font-size: 50px
+
+      h3
+        font-size: 25px
+        font-weight: lighter
+        width: 80%
+        margin-left: 10%
+
+@media screen and ( min-width: 992px )
+
+  nav.navbar
+    & > a.navbar-brand
+      font-weight: 900
+
+      img
+        color: blue
+
+    .navbar-collapse
+      .navbar-nav
+        .nav-item
+          a.nav-link
+            color: inherit
+
+      .btn-group
+        a:first-child
+          color: #212529
+          &:hover
+            color: white
+
+  .hero
+    margin-top: 25vh
+    position: relative
+    top: 0
+
+    hgroup
+      width: 100vw
+
+      h1
+        font-size: 70px
+        color: #000040
+        font-weight: 600
+
+      h3
+        width: 50%
+        margin-left: 25%
+        color: #000040
+        font-weight: 600
+
+@media screen and ( max-width: 500px )
+  footer 
+    p
+      width: 75%

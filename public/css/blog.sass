@@ -1,0 +1,46 @@
+.blog-item 
+  max-width: 100vw
+  .col-lg-8 
+    a.btn 
+      color: #e7e9fd
+      font-weight: bolder
+    .card-columns
+      column-gap: inherit !important
+      column-count: 3 !important
+      @media screen and ( max-width: 1600px )
+        column-count: 2 !important
+      @media screen and ( max-width: 768px )
+        column-count: 1 !important
+
+    div.post 
+      background-color: rgba(white, 0.4)
+      display: block
+      position: relative
+
+      // Display Posts
+      h1.display-4 
+        @media screen and ( max-width: 600px )
+          font-size: 2rem !important
+      p.lead 
+      .pdate
+      img.img-fluid 
+        max-height: 25vh !important
+        width: auto
+
+    // Display Post
+    #comment-section 
+      background-color: rgba(black, 0.15)
+      border-left: solid 6px #6c757d !important
+
+      .comment-output 
+
+      h5.card-header 
+        border-top: 1px solid rgba(black, 0.125)
+
+      .comment-input
+        form 
+          textarea 
+            background-color: rgba(white, 0.45)
+            &:focus 
+              background-color: rgba(white, 0.65)
+              transition: background-color ease-in-out 200ms

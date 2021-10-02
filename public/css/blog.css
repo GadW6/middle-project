@@ -1,0 +1,66 @@
+.blog-item {
+  max-width: 100vw;
+}
+
+.blog-item .col-lg-8 a.btn {
+  color: #e7e9fd;
+  font-weight: bolder;
+}
+
+.blog-item .col-lg-8 .card-columns {
+  -webkit-column-gap: inherit !important;
+          column-gap: inherit !important;
+  -webkit-column-count: 3 !important;
+          column-count: 3 !important;
+}
+
+@media screen and (max-width: 1600px) {
+  .blog-item .col-lg-8 .card-columns {
+    -webkit-column-count: 2 !important;
+            column-count: 2 !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blog-item .col-lg-8 .card-columns {
+    -webkit-column-count: 1 !important;
+            column-count: 1 !important;
+  }
+}
+
+.blog-item .col-lg-8 div.post {
+  background-color: rgba(255, 255, 255, 0.4);
+  display: block;
+  position: relative;
+}
+
+@media screen and (max-width: 600px) {
+  .blog-item .col-lg-8 div.post h1.display-4 {
+    font-size: 2rem !important;
+  }
+}
+
+.blog-item .col-lg-8 div.post img.img-fluid {
+  max-height: 25vh !important;
+  width: auto;
+}
+
+.blog-item .col-lg-8 #comment-section {
+  background-color: rgba(0, 0, 0, 0.15);
+  border-left: solid 6px #6c757d !important;
+}
+
+.blog-item .col-lg-8 #comment-section h5.card-header {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.blog-item .col-lg-8 #comment-section .comment-input form textarea {
+  background-color: rgba(255, 255, 255, 0.45);
+}
+
+.blog-item .col-lg-8 #comment-section .comment-input form textarea:focus {
+  background-color: rgba(255, 255, 255, 0.65);
+  -webkit-transition: background-color ease-in-out 200ms;
+  transition: background-color ease-in-out 200ms;
+}
+/*# sourceMappingURL=blog.css.map */
